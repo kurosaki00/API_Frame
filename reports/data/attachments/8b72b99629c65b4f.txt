@@ -1,0 +1,10 @@
+INFO     commons.request_util:request_util.py:50 ----------测试用例请求开始----------
+INFO     commons.request_util:request_util.py:51 用例标题：验证文件上传成功测试用例
+INFO     commons.request_util:request_util.py:52 请求方式：post
+INFO     commons.request_util:request_util.py:53 请求路径：https://api.weixin.qq.com/cgi-bin/media/uploadimg
+INFO     commons.request_util:request_util.py:68 请求files参数：{'media': 'C:/Users/kuros/Desktop/ResReader.png'}
+INFO     commons.request_util:request_util.py:62 请求params参数：{'access_token': '61_ZVhUyd82FrJ5jbsvp_4AMpXnZ7qvh2O9gGEjp9fMMzM_P96pfyFjwmWDgtAUDhINOS791-Dbvau-NOmssNInwI3D3Bpj6cBVg7fdQwAMLmOpIZtwZG4rZcVYrGLIrdGMNW6Kegu5W4UtSRDBHFPjAGAVTD'}
+INFO     commons.request_util:request_util.py:79 预期结果：None
+INFO     commons.request_util:request_util.py:80 实际结果：{"url":"http:\/\/mmbiz.qpic.cn\/mmbiz_png\/gwVWn1TZHhUpZdJskxuPnfa1ege0NHc8G6icT2XsWl5CcQf0OdefVoLMica7BOlFWPSMamN404Wib8ibluMlPKk6JQ\/0"}
+INFO     commons.request_util:request_util.py:90 接口测试通过
+INFO     commons.request_util:request_util.py:91 ----------测试用例请求结束----------

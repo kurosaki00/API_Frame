@@ -1,0 +1,155 @@
+{
+  "8747d79a1a383ae22aa91e0feb84a06e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a13fc8a207993304",
+      "status" : "passed",
+      "time" : {
+        "start" : 1663683965366,
+        "stop" : 1663683966036,
+        "duration" : 670
+      }
+    } ]
+  },
+  "3f3ff7e6ba34c9cc4b0d1ecffe8799a4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b492648c5d936945",
+      "status" : "passed",
+      "time" : {
+        "start" : 1663683967377,
+        "stop" : 1663683967454,
+        "duration" : 77
+      }
+    } ]
+  },
+  "7f3e86de05aaca1e80004f613bbb6ca3" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "177adaaaf9f33fea",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: contains断言失败，返回结果中不包含预期结果登录成功1",
+      "time" : {
+        "start" : 1663683966352,
+        "stop" : 1663683966481,
+        "duration" : 129
+      }
+    } ]
+  },
+  "ed1e65670fb0418f4a52f6b780f8ee86" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5c9113b3c70445e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1663683967469,
+        "stop" : 1663683967856,
+        "duration" : 387
+      }
+    } ]
+  },
+  "dfb15d7d3d4c04d877eafc4ad45076ce" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "10d7425831ca3501",
+      "status" : "passed",
+      "time" : {
+        "start" : 1663683964984,
+        "stop" : 1663683965354,
+        "duration" : 370
+      }
+    } ]
+  },
+  "40cba7a5b7518b6a211b536bf9708c03" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1645bff027ede387",
+      "status" : "passed",
+      "time" : {
+        "start" : 1663683967292,
+        "stop" : 1663683967366,
+        "duration" : 74
+      }
+    } ]
+  },
+  "c83f18603005a7f49cd5d4eb75479072" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "325d512cab9cdefe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1663683966225,
+        "stop" : 1663683966336,
+        "duration" : 111
+      }
+    } ]
+  },
+  "a228fb8a4959a7ae1711dcc3f4d625d5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3233d8a1cc0fb7be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1663683966051,
+        "stop" : 1663683966214,
+        "duration" : 163
+      }
+    } ]
+  }
+}

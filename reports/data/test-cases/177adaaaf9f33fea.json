@@ -1,0 +1,128 @@
+{
+  "uid" : "177adaaaf9f33fea",
+  "name" : "test_login_b2c[caseinfo0]",
+  "fullName" : "testcases.wechat_testcases.test_b2c.TestLogin#test_login_b2c",
+  "historyId" : "7f3e86de05aaca1e80004f613bbb6ca3",
+  "time" : {
+    "start" : 1663683966352,
+    "stop" : 1663683966481,
+    "duration" : 129
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: contains断言失败，返回结果中不包含预期结果登录成功1",
+  "statusTrace" : "self = <testcases.wechat_testcases.test_b2c.TestLogin object at 0x000001E6C7BD4520>\ncaseinfo = {'extract': {'token': '$.data.token'}, 'parametrize': [['title', 'accounts', 'pwd', 'type', 'assert_code', 'assert_msg...st', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': None}, ...}, 'story': '登录b2c商城接口', ...}\nbase_url = 'http://101.34.221.219:8010/api.php?s='\n\n    @pytest.mark.parametrize('caseinfo', read_testcase(current_path + '/test_b2c1.yaml'))\n    def test_login_b2c(self, caseinfo, base_url):\n        # print(caseinfo)\n        # 判断yaml的数据格式是否符合框架的规范\n>       RequestUtil().standard_yaml(caseinfo, base_url)\n\ntestcases\\wechat_testcases\\test_b2c.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ncommons\\request_util.py:88: in standard_yaml\n    assert_result(caseinfo['validate'], res)\ncommons\\assert_util.py:30: in assert_result\n    assert_contains(value, res.text)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nyq_data = '登录成功1'\nsj_text_value = '{\"msg\":\"登录成功\",\"code\":0,\"data\":{\"id\":\"548\",\"alipay_openid\":\"\",\"weixin_openid\":\"\",\"weixin_unionid\":\"\",\"weixin_web_openi...密\",\"birthday_text\":\"\",\"mobile_security\":\"\",\"email_security\":\"\",\"user_name_view\":\"baili\",\"is_mandatory_bind_mobile\":0}}'\n\n    def assert_contains(yq_data, sj_text_value):\n        # yq_data可能是整型，需要进行强转\n        if str(yq_data) not in sj_text_value:\n>           raise AssertionError(f'contains断言失败，返回结果中不包含预期结果{yq_data}')\nE           AssertionError: contains断言失败，返回结果中不包含预期结果登录成功1\n\ncommons\\assert_util.py:75: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_extract",
+    "time" : {
+      "start" : 1663683964980,
+      "stop" : 1663683964981,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1663683964980,
+      "stop" : 1663683964980,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1663683964980,
+      "stop" : 1663683964980,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: contains断言失败，返回结果中不包含预期结果登录成功1",
+    "statusTrace" : "self = <testcases.wechat_testcases.test_b2c.TestLogin object at 0x000001E6C7BD4520>\ncaseinfo = {'extract': {'token': '$.data.token'}, 'parametrize': [['title', 'accounts', 'pwd', 'type', 'assert_code', 'assert_msg...st', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': None}, ...}, 'story': '登录b2c商城接口', ...}\nbase_url = 'http://101.34.221.219:8010/api.php?s='\n\n    @pytest.mark.parametrize('caseinfo', read_testcase(current_path + '/test_b2c1.yaml'))\n    def test_login_b2c(self, caseinfo, base_url):\n        # print(caseinfo)\n        # 判断yaml的数据格式是否符合框架的规范\n>       RequestUtil().standard_yaml(caseinfo, base_url)\n\ntestcases\\wechat_testcases\\test_b2c.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ncommons\\request_util.py:88: in standard_yaml\n    assert_result(caseinfo['validate'], res)\ncommons\\assert_util.py:30: in assert_result\n    assert_contains(value, res.text)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nyq_data = '登录成功1'\nsj_text_value = '{\"msg\":\"登录成功\",\"code\":0,\"data\":{\"id\":\"548\",\"alipay_openid\":\"\",\"weixin_openid\":\"\",\"weixin_unionid\":\"\",\"weixin_web_openi...密\",\"birthday_text\":\"\",\"mobile_security\":\"\",\"email_security\":\"\",\"user_name_view\":\"baili\",\"is_mandatory_bind_mobile\":0}}'\n\n    def assert_contains(yq_data, sj_text_value):\n        # yq_data可能是整型，需要进行强转\n        if str(yq_data) not in sj_text_value:\n>           raise AssertionError(f'contains断言失败，返回结果中不包含预期结果{yq_data}')\nE           AssertionError: contains断言失败，返回结果中不包含预期结果登录成功1\n\ncommons\\assert_util.py:75: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6c9dd4a3ba8be69c",
+      "name" : "log",
+      "source" : "6c9dd4a3ba8be69c.txt",
+      "type" : "text/plain",
+      "size" : 1757
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases.wechat_testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_b2c"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-6NHQ8RAG"
+  }, {
+    "name" : "thread",
+    "value" : "8576-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.wechat_testcases.test_b2c"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'extract': {'token': '$.data.token'}, 'parametrize': [['title', 'accounts', 'pwd', 'type', 'assert_code', 'assert_msg'], ['用例标题-验证登录成功用例-正例', 'baili', 'baili123', 'username', 0, '登录成功1'], ['用例标题-验证登录失败用例-反例', 'baili', '123.9', 'username', -1, '密码'], ['用例标题-验证登录失败用例-反例', ['baili', '大白'], 123, 'username', -3, '不存在']], 'request': {'data': {'accounts': 'baili', 'pwd': 'baili123', 'type': 'username'}, 'headers': {'Content_Type': 'application/json'}, 'method': 'post', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': None}, 'url': 'user/login'}, 'story': '登录b2c商城接口', 'title': '用例标题-验证登录成功用例-正例', 'validate': {'codes': 200, 'contains': '登录成功1', 'equals': {'code': 0}}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "177adaaaf9f33fea.json",
+  "parameterValues" : [ "{'extract': {'token': '$.data.token'}, 'parametrize': [['title', 'accounts', 'pwd', 'type', 'assert_code', 'assert_msg'], ['用例标题-验证登录成功用例-正例', 'baili', 'baili123', 'username', 0, '登录成功1'], ['用例标题-验证登录失败用例-反例', 'baili', '123.9', 'username', -1, '密码'], ['用例标题-验证登录失败用例-反例', ['baili', '大白'], 123, 'username', -3, '不存在']], 'request': {'data': {'accounts': 'baili', 'pwd': 'baili123', 'type': 'username'}, 'headers': {'Content_Type': 'application/json'}, 'method': 'post', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': None}, 'url': 'user/login'}, 'story': '登录b2c商城接口', 'title': '用例标题-验证登录成功用例-正例', 'validate': {'codes': 200, 'contains': '登录成功1', 'equals': {'code': 0}}}" ]
+}

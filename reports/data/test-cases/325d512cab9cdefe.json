@@ -1,0 +1,120 @@
+{
+  "uid" : "325d512cab9cdefe",
+  "name" : "test_login_phpwind[caseinfo0]",
+  "fullName" : "testcases.php_testcases.test_php.TestPhp#test_login_phpwind",
+  "historyId" : "c83f18603005a7f49cd5d4eb75479072",
+  "time" : {
+    "start" : 1663683966225,
+    "stop" : 1663683966336,
+    "duration" : 111
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_extract",
+    "time" : {
+      "start" : 1663683964980,
+      "stop" : 1663683964981,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1663683964980,
+      "stop" : 1663683964980,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1663683964980,
+      "stop" : 1663683964980,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "64f4aed9263c2faa",
+      "name" : "log",
+      "source" : "64f4aed9263c2faa.txt",
+      "type" : "text/plain",
+      "size" : 1372
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases.php_testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_php"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPhp"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-6NHQ8RAG"
+  }, {
+    "name" : "thread",
+    "value" : "8576-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.php_testcases.test_php"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'story': '登录phpwind接口', 'title': '验证登录成功测试用例', 'request': {'method': 'post', 'url': 'http://47.107.116.139/phpwind/index.php?m=u&c=login&a=dorun', 'headers': {'Accept': 'application/json,text/javascript,/;q=0.01', 'X-Requested-With': 'XMLHttpRequest'}, 'data': {'username': 'baili', 'password': 'baili123', 'backurl': 'http://47.107.116.139/phpwind/', 'invite': '', 'csrf_token': '${read_yaml2(csrf_token,0)}'}}, 'validate': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "325d512cab9cdefe.json",
+  "parameterValues" : [ "{'story': '登录phpwind接口', 'title': '验证登录成功测试用例', 'request': {'method': 'post', 'url': 'http://47.107.116.139/phpwind/index.php?m=u&c=login&a=dorun', 'headers': {'Accept': 'application/json,text/javascript,/;q=0.01', 'X-Requested-With': 'XMLHttpRequest'}, 'data': {'username': 'baili', 'password': 'baili123', 'backurl': 'http://47.107.116.139/phpwind/', 'invite': '', 'csrf_token': '${read_yaml2(csrf_token,0)}'}}, 'validate': None}" ]
+}

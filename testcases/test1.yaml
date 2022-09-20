@@ -1,0 +1,47 @@
+-  #用'-'开头,用来区分多个用例
+  story: 登录接口
+  title: 用例标题-验证登录成功用例1
+  request:  #请求
+    method: post   #请求方式
+    url: user/login    #请求路径url
+    headers:    #请求头
+      Content_Type: application/json   #请求的数据类型
+    params:
+      application: app   #请求数据
+      application_client_type: h5
+      token: Null
+    data:
+      accounts: baili
+      pwd: baili123
+      type: username
+  validate: null    #断言
+
+-
+  story: 登录接口
+  title: 用例标题-验证登录失败用例-反例
+  request:  #请求
+    method: post   #请求方式
+    url: user/login    #请求路径url
+    headers:    #请求头
+      Content_Type: application/json   #请求的数据类型
+    params:
+      application: app   #请求数据
+      application_client_type: h5
+      token: Null
+    data:
+      accounts: bailii
+      pwd: baili123
+      type: username
+  validate: null    #断言
+
+#-  #用'-'开头,用来区分多个用例
+#  story: 登录接口
+#  title: 用例标题-验证登录成功用例2
+#  request:  #请求
+#    method: get   #请求方式
+#    url: useraddress/delete    #请求路径url
+#    headers:    #请求头
+#      Content_Type: application/json   #请求的数据类型
+#    data:
+#      grant_type: client_credential   #请求数据
+#  validate: null    #断言

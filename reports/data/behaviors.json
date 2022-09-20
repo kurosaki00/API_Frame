@@ -1,0 +1,109 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_get_access_token[caseinfo0]",
+    "uid" : "10d7425831ca3501",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1663683964984,
+      "stop" : 1663683965354,
+      "duration" : 370
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'story': '微信公众号获取access_token接口', 'title': '验证登录成功测试用例', 'request': {'method': 'get', 'url': 'https://api.weixin.qq.com/cgi-bin/token', 'params': {'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': '8326fc915928dee3165720c910effb86'}}, 'extract': {'access_token': '$.access_token'}, 'validate': {'codes': 200}}" ]
+  }, {
+    "name" : "test_fileupload[caseinfo0]",
+    "uid" : "a13fc8a207993304",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1663683965366,
+      "stop" : 1663683966036,
+      "duration" : 670
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'story': '微信公众号文件上传接口', 'title': '验证文件上传成功测试用例', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/media/uploadimg', 'params': {'access_token': '${read_yaml(access_token)}'}, 'files': {'media': 'C:/Users/kuros/Desktop/ResReader.png'}}, 'validate': None}" ]
+  }, {
+    "name" : "test_phpwind_start[caseinfo0]",
+    "uid" : "3233d8a1cc0fb7be",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1663683966051,
+      "stop" : 1663683966214,
+      "duration" : 163
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'story': '访问phpwind首页接口', 'title': '验证访问成功测试用例', 'request': {'method': 'get', 'url': 'http://47.107.116.139/phpwind/'}, 'extract': {'csrf_token': 'name=\"csrf_token\" value=\"(.*?)\"'}, 'validate': None}" ]
+  }, {
+    "name" : "test_login_phpwind[caseinfo0]",
+    "uid" : "325d512cab9cdefe",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1663683966225,
+      "stop" : 1663683966336,
+      "duration" : 111
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'story': '登录phpwind接口', 'title': '验证登录成功测试用例', 'request': {'method': 'post', 'url': 'http://47.107.116.139/phpwind/index.php?m=u&c=login&a=dorun', 'headers': {'Accept': 'application/json,text/javascript,/;q=0.01', 'X-Requested-With': 'XMLHttpRequest'}, 'data': {'username': 'baili', 'password': 'baili123', 'backurl': 'http://47.107.116.139/phpwind/', 'invite': '', 'csrf_token': '${read_yaml2(csrf_token,0)}'}}, 'validate': None}" ]
+  }, {
+    "name" : "test_login_b2c[caseinfo0]",
+    "uid" : "177adaaaf9f33fea",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1663683966352,
+      "stop" : 1663683966481,
+      "duration" : 129
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'extract': {'token': '$.data.token'}, 'parametrize': [['title', 'accounts', 'pwd', 'type', 'assert_code', 'assert_msg'], ['用例标题-验证登录成功用例-正例', 'baili', 'baili123', 'username', 0, '登录成功1'], ['用例标题-验证登录失败用例-反例', 'baili', '123.9', 'username', -1, '密码'], ['用例标题-验证登录失败用例-反例', ['baili', '大白'], 123, 'username', -3, '不存在']], 'request': {'data': {'accounts': 'baili', 'pwd': 'baili123', 'type': 'username'}, 'headers': {'Content_Type': 'application/json'}, 'method': 'post', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': None}, 'url': 'user/login'}, 'story': '登录b2c商城接口', 'title': '用例标题-验证登录成功用例-正例', 'validate': {'codes': 200, 'contains': '登录成功1', 'equals': {'code': 0}}}" ]
+  }, {
+    "name" : "test_login_b2c[caseinfo1]",
+    "uid" : "1645bff027ede387",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1663683967292,
+      "stop" : 1663683967366,
+      "duration" : 74
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'extract': {'token': '$.data.token'}, 'parametrize': [['title', 'accounts', 'pwd', 'type', 'assert_code', 'assert_msg'], ['用例标题-验证登录成功用例-正例', 'baili', 'baili123', 'username', 0, '登录成功1'], ['用例标题-验证登录失败用例-反例', 'baili', '123.9', 'username', -1, '密码'], ['用例标题-验证登录失败用例-反例', ['baili', '大白'], 123, 'username', -3, '不存在']], 'request': {'data': {'accounts': 'baili', 'pwd': '123.9', 'type': 'username'}, 'headers': {'Content_Type': 'application/json'}, 'method': 'post', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': None}, 'url': 'user/login'}, 'story': '登录b2c商城接口', 'title': '用例标题-验证登录失败用例-反例', 'validate': {'codes': 200, 'contains': '密码', 'equals': {'code': -1}}}" ]
+  }, {
+    "name" : "test_login_b2c[caseinfo2]",
+    "uid" : "b492648c5d936945",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1663683967377,
+      "stop" : 1663683967454,
+      "duration" : 77
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'extract': {'token': '$.data.token'}, 'parametrize': [['title', 'accounts', 'pwd', 'type', 'assert_code', 'assert_msg'], ['用例标题-验证登录成功用例-正例', 'baili', 'baili123', 'username', 0, '登录成功1'], ['用例标题-验证登录失败用例-反例', 'baili', '123.9', 'username', -1, '密码'], ['用例标题-验证登录失败用例-反例', ['baili', '大白'], 123, 'username', -3, '不存在']], 'request': {'data': {'accounts': ['baili', '大白'], 'pwd': 123, 'type': 'username'}, 'headers': {'Content_Type': 'application/json'}, 'method': 'post', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': None}, 'url': 'user/login'}, 'story': '登录b2c商城接口', 'title': '用例标题-验证登录失败用例-反例', 'validate': {'codes': 200, 'contains': '不存在', 'equals': {'code': -3}}}" ]
+  }, {
+    "name" : "test_order_list[caseinfo0]",
+    "uid" : "5c9113b3c70445e3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1663683967469,
+      "stop" : 1663683967856,
+      "duration" : 387
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'story': '订单列表接口', 'title': '测试订单列表接口', 'request': {'method': 'post', 'url': 'order/index', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': '${read_yaml(token)}'}, 'data': {'page': 1, 'keywords': '', 'status': '-1', 'is_more': 1}}, 'validate': None}" ]
+  } ]
+}

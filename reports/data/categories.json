@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: contains断言失败，返回结果中不包含预期结果登录成功1",
+      "children" : [ {
+        "name" : "test_login_b2c[caseinfo0]",
+        "uid" : "177adaaaf9f33fea",
+        "parentUid" : "4b735a006a86213eb513ae199c6652dd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1663683966352,
+          "stop" : 1663683966481,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'extract': {'token': '$.data.token'}, 'parametrize': [['title', 'accounts', 'pwd', 'type', 'assert_code', 'assert_msg'], ['用例标题-验证登录成功用例-正例', 'baili', 'baili123', 'username', 0, '登录成功1'], ['用例标题-验证登录失败用例-反例', 'baili', '123.9', 'username', -1, '密码'], ['用例标题-验证登录失败用例-反例', ['baili', '大白'], 123, 'username', -3, '不存在']], 'request': {'data': {'accounts': 'baili', 'pwd': 'baili123', 'type': 'username'}, 'headers': {'Content_Type': 'application/json'}, 'method': 'post', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': None}, 'url': 'user/login'}, 'story': '登录b2c商城接口', 'title': '用例标题-验证登录成功用例-正例', 'validate': {'codes': 200, 'contains': '登录成功1', 'equals': {'code': 0}}}" ]
+      } ],
+      "uid" : "4b735a006a86213eb513ae199c6652dd"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

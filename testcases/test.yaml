@@ -1,0 +1,39 @@
+#常用数据类型：
+#1、标量：最基本的数据类型，同时表示单个变量
+#  整数、浮点数、字符串、布尔、Null、日期和时间
+#  注意：字符串可以不用写引号，也可以写单引号或双引号。单引号和双引号的区别：单引号会对特殊字符转义
+#  Null表示空类型，None表示的是字符串
+#2、对象：字典dict
+#3、数组：列表list，通过在一组数据之前加'-'
+
+#数据类型强制转换（强制转换并不是在任何时候都成立）
+#!!str  !!int  !!float !!bool  !!null  !!timestamp   !!set   !!map   !!binary
+#float不能强转成int，字母类字符串也不能强制成int，数字类字符串可以强制成int
+
+#变量的引用：
+#& 表示建立一个锚点，* 表示用来引用锚点，<<表示合并
+#锚点建立在key和value中间
+
+# 键值对，冒号后面要加空格
+data1: 5378
+data2: 483.34
+data3: &aaa 一夜暴富  #data3建立锚点,锚点名称任意定义,保存data3的值
+data4: '只想躺平'
+data5: "打工好难"
+data6: true
+data7: Null   #<class 'NoneType'>,None <class 'str'>
+data8: 2022-09-03   #<class 'datetime.date'>,2022/09/03 <class 'str'>
+data9: 2022-09-03 21:14:33  #<class 'datetime.datetime'>
+data10:   #列表类型，也可以写成data10：[{data1: 5378},{data2: 483.34},{data3: 一夜暴富}]
+  - data1: 5378
+  - data2: 483.34
+  - data3: 一夜暴富
+#data10: [{data1: 5378},{data2: 483.34},{data3: 一夜暴富}]
+data11: &bbb
+    name: 大黄  #字典类型，也可以写成data11：{name：大黄}
+#data11: {name: 大黄}
+data12: *aaa  #引用data3的值
+data13:
+    name1: 旺财
+    <<: *bbb  #将data11的值合并到data13
+

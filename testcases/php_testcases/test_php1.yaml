@@ -1,0 +1,9 @@
+-
+  story: 访问phpwind首页接口
+  title: 验证访问成功测试用例
+  request:
+    method: get
+    url: http://47.107.116.139/phpwind/
+  extract:
+    csrf_token: 'name="csrf_token" value="(.*?)"' #html只能通过正则提取
+  validate: null    #断言

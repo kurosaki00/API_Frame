@@ -1,0 +1,21 @@
+-
+  story: 微信公众号获取access_token接口
+  title: 验证登录成功测试用例
+  request:
+    method: get
+    url: https://api.weixin.qq.com/cgi-bin/token
+    params:
+      grant_type: client_credential
+      appid: wx8a9de038e93f77ab
+      secret: 8326fc915928dee3165720c910effb86
+  extract:
+    access_token: $.access_token
+  validate: #null    #断言，一般在请求响应提取变量后进行断言
+#  断言有以下几种方式：
+#  状态码断言：一般为200 ok
+    codes: 200
+#  业务断言：相等和包含
+#    equals: {msg: 登录成功}
+#    contains: data
+#  数据库断言：查询数据库语句
+#    databases:
