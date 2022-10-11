@@ -1,80 +1,160 @@
 [ {
-  "uid" : "325d512cab9cdefe",
-  "name" : "test_login_phpwind[caseinfo0]",
+  "uid" : "a3d0cafb572aed32",
+  "name" : "验证登录成功测试用例",
   "time" : {
-    "start" : 1663683966225,
-    "stop" : 1663683966336,
-    "duration" : 111
+    "start" : 1664809339126,
+    "stop" : 1664809339245,
+    "duration" : 119
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "10d7425831ca3501",
-  "name" : "test_get_access_token[caseinfo0]",
+  "uid" : "bd648d62b3957592",
+  "name" : "base64加密接口",
   "time" : {
-    "start" : 1663683964984,
-    "stop" : 1663683965354,
-    "duration" : 370
+    "start" : 1664809338512,
+    "stop" : 1664809338605,
+    "duration" : 93
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5c9113b3c70445e3",
-  "name" : "test_order_list[caseinfo0]",
+  "uid" : "163b6df82382a76a",
+  "name" : "验证文件上传成功测试用例",
   "time" : {
-    "start" : 1663683967469,
-    "stop" : 1663683967856,
-    "duration" : 387
+    "start" : 1664809337866,
+    "stop" : 1664809338499,
+    "duration" : 633
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1645bff027ede387",
-  "name" : "test_login_b2c[caseinfo1]",
+  "uid" : "398bcdd4a64c83c2",
+  "name" : "验证登录成功测试用例",
   "time" : {
-    "start" : 1663683967292,
-    "stop" : 1663683967366,
-    "duration" : 74
+    "start" : 1664809337387,
+    "stop" : 1664809337853,
+    "duration" : 466
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b492648c5d936945",
-  "name" : "test_login_b2c[caseinfo2]",
+  "uid" : "475059d6ef5a02a0",
+  "name" : "测试订单列表接口",
   "time" : {
-    "start" : 1663683967377,
-    "stop" : 1663683967454,
-    "duration" : 77
+    "start" : 1664809337190,
+    "stop" : 1664809337276,
+    "duration" : 86
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "177adaaaf9f33fea",
-  "name" : "test_login_b2c[caseinfo0]",
+  "uid" : "10fc19cfb5d6efe0",
+  "name" : "用例标题-验证登录失败用例-反例",
   "time" : {
-    "start" : 1663683966352,
-    "stop" : 1663683966481,
-    "duration" : 129
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "a13fc8a207993304",
-  "name" : "test_fileupload[caseinfo0]",
-  "time" : {
-    "start" : 1663683965366,
-    "stop" : 1663683966036,
-    "duration" : 670
+    "start" : 1664809337094,
+    "stop" : 1664809337179,
+    "duration" : 85
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3233d8a1cc0fb7be",
-  "name" : "test_phpwind_start[caseinfo0]",
+  "uid" : "eb744cb849f1b25",
+  "name" : "测试sign签名接口",
   "time" : {
-    "start" : 1663683966051,
-    "stop" : 1663683966214,
-    "duration" : 163
+    "start" : 1664809339504,
+    "stop" : 1664809339649,
+    "duration" : 145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75d0be1fb00256c",
+  "name" : "订单详情接口用例",
+  "time" : {
+    "start" : 1664809337291,
+    "stop" : 1664809337375,
+    "duration" : 84
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1721e8300d579e7a",
+  "name" : "用例标题-验证登录失败用例-反例",
+  "time" : {
+    "start" : 1664809337001,
+    "stop" : 1664809337077,
+    "duration" : 76
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c6854487c71dca1e",
+  "name" : "测试订单列表接口",
+  "time" : {
+    "start" : 1664809339260,
+    "stop" : 1664809339482,
+    "duration" : 222
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d31eb3cfc207650",
+  "name" : "RSA加密接口",
+  "time" : {
+    "start" : 1664809338722,
+    "stop" : 1664809338911,
+    "duration" : 189
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "83308a33b27b73c9",
+  "name" : "测试sign签名接口",
+  "time" : {
+    "start" : 1664809339662,
+    "stop" : 1664809339797,
+    "duration" : 135
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb70b118bf1410ac",
+  "name" : "MD5加密接口",
+  "time" : {
+    "start" : 1664809338618,
+    "stop" : 1664809338709,
+    "duration" : 91
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c3c0d6af49567c",
+  "name" : "验证访问成功测试用例",
+  "time" : {
+    "start" : 1664809338924,
+    "stop" : 1664809339111,
+    "duration" : 187
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7d14206e3a887d7",
+  "name" : "用例标题-验证登录失败用例-反例",
+  "time" : {
+    "start" : 1664809336645,
+    "stop" : 1664809336863,
+    "duration" : 218
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ab5d4579495f44f0",
+  "name" : "用例标题-验证登录成功用例-正例",
+  "time" : {
+    "start" : 1664809336880,
+    "stop" : 1664809336989,
+    "duration" : 109
   },
   "status" : "passed",
   "severity" : "normal"

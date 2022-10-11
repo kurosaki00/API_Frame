@@ -1,0 +1,19 @@
+-
+  feature: 我的订单-详情
+  story: b2c商城订单详情接口用例
+  title: $ddt{title}
+  request:
+    url: ${read_config_yaml(base_url)}?s=order/detail
+    method: post
+    params:
+      application: web
+      application_client_type: pc
+      token: ${read_yaml(token)}
+    data:
+      id: ${read_yaml(order_id)}
+  parametrize:
+    - ["title"]
+    - ["订单详情接口用例"]
+  validate: null
+
+

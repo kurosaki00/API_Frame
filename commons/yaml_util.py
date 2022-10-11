@@ -29,7 +29,7 @@ import yaml
 # if __name__ == '__main__':
 #     value = read_yaml('../testcases/test1.yaml')
 #     print(value)  # 键值对，打印结果是一个字典
-#     # write_yaml('../testcases/test.yaml')
+#     # write_yaml('../testcases/testyaml.txt')
 #     # print(value['data1'], type(value['data1']))
 #     # print(value['data2'], type(value['data2']))
 #     # print(value['data3'], type(value['data3']))
@@ -75,10 +75,19 @@ def clear_yaml():
 #         return value
 
 
+# # 读取config.yaml文件数据
+# def read_config_yaml(key):
+#     with open(os.getcwd() + '/config.yaml', encoding='utf-8', mode='r') as f:
+#         # value1 = yaml.load(f, yaml.FullLoader)
+#         # 读取文件第二种方法,安全加载
+#         value = yaml.safe_load(f)
+#         return value[key]
+
+
 if __name__ == '__main__':
     value = read_yaml()
     print(value)  # 键值对，打印结果是一个字典
-    # write_yaml('../testcases/test.yaml')
+    # write_yaml('../testcases/testyaml.txt')
     # print(value['data1'], type(value['data1']))
     # print(value['data2'], type(value['data2']))
     # print(value['data3'], type(value['data3']))

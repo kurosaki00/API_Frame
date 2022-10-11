@@ -1,0 +1,41 @@
+-
+  feature: sign签名接口
+  story: sign签名接口
+  title: 测试sign签名接口
+  request:
+    method: post
+    url: http://101.34.221.219:5000/md5login?m=u&c=login&a=dorun
+    headers:
+      sign: ${ddt_sign(/testcases/sign/sign.yaml,$ddt{index})}
+    params:
+#      csrf_token: mashang
+      csrf_token: ${read_yaml(token)}
+    data:
+      order_id: $ddt{order_id} #"654646"
+      username: $ddt{username} #admin
+  parametrize:
+    - ["order_id","username","index"]
+    - ["654646","admin",0]
+    - ["123","xiaobai",1]
+  validate:
+    codes: 200
+
+#url+以下参数，
+#appid  不参与排序，放头部
+#appsecret   不参与排序，放头部
+#nonce   不参与排序，放尾部
+#timestamp    不参与排序，放尾部
+
+#按ASCII码排序
+#a=dorun
+#c=login
+#csrf_token=mashang
+#m=u
+#order_id:"654646"
+
+
+#a=dorun&appid=  &appsecret=  &c=login&csrf_token=mashang&m=u&nonce= &order_id:"654646"&timestamp=
+
+# MD5加密后，再大写，把sign放入url中，请求头（一般用这种），请求体
+
+

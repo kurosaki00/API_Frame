@@ -1,37 +1,15 @@
 {
-  "total" : 3,
+  "total" : 1,
   "items" : [ {
-    "uid" : "466950aaa37dae21b671e4ec51d99e33",
-    "name" : "testcases.wechat_testcases",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 4
-    }
-  }, {
-    "uid" : "b90afc2fabab18a47d7fcd35e8ce6e18",
-    "name" : "testcases.gzh_testcases",
+    "uid" : "b51346658ccdb9db01a6b5f6c12deab1",
+    "name" : "testcases",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 16,
       "unknown" : 0,
-      "total" : 2
-    }
-  }, {
-    "uid" : "31823edfb316627b95e5873cd697f406",
-    "name" : "testcases.php_testcases",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 2,
-      "unknown" : 0,
-      "total" : 2
+      "total" : 16
     }
   } ]
 }

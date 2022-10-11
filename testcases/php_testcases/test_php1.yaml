@@ -1,4 +1,5 @@
 -
+  feature: phpwind
   story: 访问phpwind首页接口
   title: 验证访问成功测试用例
   request:

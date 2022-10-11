@@ -1,4 +1,5 @@
 -
+  feature: 微信公众号
   story: 微信公众号文件上传接口
   title: 验证文件上传成功测试用例
   request:

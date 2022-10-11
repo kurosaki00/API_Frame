@@ -1,9 +1,0 @@
-INFO     commons.request_util:request_util.py:50 ----------测试用例请求开始----------
-INFO     commons.request_util:request_util.py:51 用例标题：验证登录成功测试用例
-INFO     commons.request_util:request_util.py:52 请求方式：get
-INFO     commons.request_util:request_util.py:53 请求路径：https://api.weixin.qq.com/cgi-bin/token
-INFO     commons.request_util:request_util.py:62 请求params参数：{'appid': 'wx8a9de038e93f77ab', 'grant_type': 'client_credential', 'secret': '8326fc915928dee3165720c910effb86'}
-INFO     commons.request_util:request_util.py:79 预期结果：{'codes': 200}
-INFO     commons.request_util:request_util.py:80 实际结果：{"access_token":"61_ZVhUyd82FrJ5jbsvp_4AMpXnZ7qvh2O9gGEjp9fMMzM_P96pfyFjwmWDgtAUDhINOS791-Dbvau-NOmssNInwI3D3Bpj6cBVg7fdQwAMLmOpIZtwZG4rZcVYrGLIrdGMNW6Kegu5W4UtSRDBHFPjAGAVTD","expires_in":7200}
-INFO     commons.request_util:request_util.py:90 接口测试通过
-INFO     commons.request_util:request_util.py:91 ----------测试用例请求结束----------

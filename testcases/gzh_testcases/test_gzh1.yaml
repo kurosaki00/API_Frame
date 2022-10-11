@@ -1,4 +1,5 @@
 -
+  feature: 微信公众号
   story: 微信公众号获取access_token接口
   title: 验证登录成功测试用例
   request:

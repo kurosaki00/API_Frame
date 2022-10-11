@@ -2,124 +2,216 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "testcases",
+    "name" : "testcases.test_all_cases",
     "children" : [ {
-      "name" : "gzh_testcases.test_wechat",
-      "children" : [ {
-        "name" : "test_get_access_token[caseinfo0]",
-        "uid" : "10d7425831ca3501",
-        "parentUid" : "7c6fe4751fc40817aea23225c9a05023",
-        "status" : "passed",
-        "time" : {
-          "start" : 1663683964984,
-          "stop" : 1663683965354,
-          "duration" : 370
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'story': '微信公众号获取access_token接口', 'title': '验证登录成功测试用例', 'request': {'method': 'get', 'url': 'https://api.weixin.qq.com/cgi-bin/token', 'params': {'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': '8326fc915928dee3165720c910effb86'}}, 'extract': {'access_token': '$.access_token'}, 'validate': {'codes': 200}}" ]
-      }, {
-        "name" : "test_fileupload[caseinfo0]",
-        "uid" : "a13fc8a207993304",
-        "parentUid" : "7c6fe4751fc40817aea23225c9a05023",
-        "status" : "passed",
-        "time" : {
-          "start" : 1663683965366,
-          "stop" : 1663683966036,
-          "duration" : 670
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'story': '微信公众号文件上传接口', 'title': '验证文件上传成功测试用例', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/media/uploadimg', 'params': {'access_token': '${read_yaml(access_token)}'}, 'files': {'media': 'C:/Users/kuros/Desktop/ResReader.png'}}, 'validate': None}" ]
-      } ],
-      "uid" : "gzh_testcases.test_wechat"
+      "name" : "用例标题-验证登录失败用例-反例",
+      "uid" : "e7d14206e3a887d7",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809336645,
+        "stop" : 1664809336863,
+        "duration" : 218
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
     }, {
-      "name" : "php_testcases.test_php",
-      "children" : [ {
-        "name" : "test_phpwind_start[caseinfo0]",
-        "uid" : "3233d8a1cc0fb7be",
-        "parentUid" : "18d422843831a405034a45eb8a53b44e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1663683966051,
-          "stop" : 1663683966214,
-          "duration" : 163
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'story': '访问phpwind首页接口', 'title': '验证访问成功测试用例', 'request': {'method': 'get', 'url': 'http://47.107.116.139/phpwind/'}, 'extract': {'csrf_token': 'name=\"csrf_token\" value=\"(.*?)\"'}, 'validate': None}" ]
-      }, {
-        "name" : "test_login_phpwind[caseinfo0]",
-        "uid" : "325d512cab9cdefe",
-        "parentUid" : "18d422843831a405034a45eb8a53b44e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1663683966225,
-          "stop" : 1663683966336,
-          "duration" : 111
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'story': '登录phpwind接口', 'title': '验证登录成功测试用例', 'request': {'method': 'post', 'url': 'http://47.107.116.139/phpwind/index.php?m=u&c=login&a=dorun', 'headers': {'Accept': 'application/json,text/javascript,/;q=0.01', 'X-Requested-With': 'XMLHttpRequest'}, 'data': {'username': 'baili', 'password': 'baili123', 'backurl': 'http://47.107.116.139/phpwind/', 'invite': '', 'csrf_token': '${read_yaml2(csrf_token,0)}'}}, 'validate': None}" ]
-      } ],
-      "uid" : "php_testcases.test_php"
+      "name" : "用例标题-验证登录成功用例-正例",
+      "uid" : "ab5d4579495f44f0",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809336880,
+        "stop" : 1664809336989,
+        "duration" : 109
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
     }, {
-      "name" : "wechat_testcases.test_b2c",
-      "children" : [ {
-        "name" : "test_login_b2c[caseinfo0]",
-        "uid" : "177adaaaf9f33fea",
-        "parentUid" : "69deccf97540b20e3d0ce27ae0abce66",
-        "status" : "failed",
-        "time" : {
-          "start" : 1663683966352,
-          "stop" : 1663683966481,
-          "duration" : 129
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'extract': {'token': '$.data.token'}, 'parametrize': [['title', 'accounts', 'pwd', 'type', 'assert_code', 'assert_msg'], ['用例标题-验证登录成功用例-正例', 'baili', 'baili123', 'username', 0, '登录成功1'], ['用例标题-验证登录失败用例-反例', 'baili', '123.9', 'username', -1, '密码'], ['用例标题-验证登录失败用例-反例', ['baili', '大白'], 123, 'username', -3, '不存在']], 'request': {'data': {'accounts': 'baili', 'pwd': 'baili123', 'type': 'username'}, 'headers': {'Content_Type': 'application/json'}, 'method': 'post', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': None}, 'url': 'user/login'}, 'story': '登录b2c商城接口', 'title': '用例标题-验证登录成功用例-正例', 'validate': {'codes': 200, 'contains': '登录成功1', 'equals': {'code': 0}}}" ]
-      }, {
-        "name" : "test_login_b2c[caseinfo1]",
-        "uid" : "1645bff027ede387",
-        "parentUid" : "69deccf97540b20e3d0ce27ae0abce66",
-        "status" : "passed",
-        "time" : {
-          "start" : 1663683967292,
-          "stop" : 1663683967366,
-          "duration" : 74
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'extract': {'token': '$.data.token'}, 'parametrize': [['title', 'accounts', 'pwd', 'type', 'assert_code', 'assert_msg'], ['用例标题-验证登录成功用例-正例', 'baili', 'baili123', 'username', 0, '登录成功1'], ['用例标题-验证登录失败用例-反例', 'baili', '123.9', 'username', -1, '密码'], ['用例标题-验证登录失败用例-反例', ['baili', '大白'], 123, 'username', -3, '不存在']], 'request': {'data': {'accounts': 'baili', 'pwd': '123.9', 'type': 'username'}, 'headers': {'Content_Type': 'application/json'}, 'method': 'post', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': None}, 'url': 'user/login'}, 'story': '登录b2c商城接口', 'title': '用例标题-验证登录失败用例-反例', 'validate': {'codes': 200, 'contains': '密码', 'equals': {'code': -1}}}" ]
-      }, {
-        "name" : "test_login_b2c[caseinfo2]",
-        "uid" : "b492648c5d936945",
-        "parentUid" : "69deccf97540b20e3d0ce27ae0abce66",
-        "status" : "passed",
-        "time" : {
-          "start" : 1663683967377,
-          "stop" : 1663683967454,
-          "duration" : 77
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'extract': {'token': '$.data.token'}, 'parametrize': [['title', 'accounts', 'pwd', 'type', 'assert_code', 'assert_msg'], ['用例标题-验证登录成功用例-正例', 'baili', 'baili123', 'username', 0, '登录成功1'], ['用例标题-验证登录失败用例-反例', 'baili', '123.9', 'username', -1, '密码'], ['用例标题-验证登录失败用例-反例', ['baili', '大白'], 123, 'username', -3, '不存在']], 'request': {'data': {'accounts': ['baili', '大白'], 'pwd': 123, 'type': 'username'}, 'headers': {'Content_Type': 'application/json'}, 'method': 'post', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': None}, 'url': 'user/login'}, 'story': '登录b2c商城接口', 'title': '用例标题-验证登录失败用例-反例', 'validate': {'codes': 200, 'contains': '不存在', 'equals': {'code': -3}}}" ]
-      }, {
-        "name" : "test_order_list[caseinfo0]",
-        "uid" : "5c9113b3c70445e3",
-        "parentUid" : "69deccf97540b20e3d0ce27ae0abce66",
-        "status" : "passed",
-        "time" : {
-          "start" : 1663683967469,
-          "stop" : 1663683967856,
-          "duration" : 387
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'story': '订单列表接口', 'title': '测试订单列表接口', 'request': {'method': 'post', 'url': 'order/index', 'params': {'application': 'app', 'application_client_type': 'h5', 'token': '${read_yaml(token)}'}, 'data': {'page': 1, 'keywords': '', 'status': '-1', 'is_more': 1}}, 'validate': None}" ]
-      } ],
-      "uid" : "wechat_testcases.test_b2c"
+      "name" : "用例标题-验证登录失败用例-反例",
+      "uid" : "1721e8300d579e7a",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809337001,
+        "stop" : 1664809337077,
+        "duration" : 76
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "用例标题-验证登录失败用例-反例",
+      "uid" : "10fc19cfb5d6efe0",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809337094,
+        "stop" : 1664809337179,
+        "duration" : 85
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "测试订单列表接口",
+      "uid" : "475059d6ef5a02a0",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809337190,
+        "stop" : 1664809337276,
+        "duration" : 86
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "订单详情接口用例",
+      "uid" : "75d0be1fb00256c",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809337291,
+        "stop" : 1664809337375,
+        "duration" : 84
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "验证登录成功测试用例",
+      "uid" : "398bcdd4a64c83c2",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809337387,
+        "stop" : 1664809337853,
+        "duration" : 466
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "验证文件上传成功测试用例",
+      "uid" : "163b6df82382a76a",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809337866,
+        "stop" : 1664809338499,
+        "duration" : 633
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "base64加密接口",
+      "uid" : "bd648d62b3957592",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809338512,
+        "stop" : 1664809338605,
+        "duration" : 93
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "MD5加密接口",
+      "uid" : "eb70b118bf1410ac",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809338618,
+        "stop" : 1664809338709,
+        "duration" : 91
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "RSA加密接口",
+      "uid" : "4d31eb3cfc207650",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809338722,
+        "stop" : 1664809338911,
+        "duration" : 189
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "验证访问成功测试用例",
+      "uid" : "c3c0d6af49567c",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809338924,
+        "stop" : 1664809339111,
+        "duration" : 187
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "验证登录成功测试用例",
+      "uid" : "a3d0cafb572aed32",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809339126,
+        "stop" : 1664809339245,
+        "duration" : 119
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "测试订单列表接口",
+      "uid" : "c6854487c71dca1e",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809339260,
+        "stop" : 1664809339482,
+        "duration" : 222
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "测试sign签名接口",
+      "uid" : "eb744cb849f1b25",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809339504,
+        "stop" : 1664809339649,
+        "duration" : 145
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "测试sign签名接口",
+      "uid" : "83308a33b27b73c9",
+      "parentUid" : "f7a78209dd5e3733f72ebae0f8b5a576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664809339662,
+        "stop" : 1664809339797,
+        "duration" : 135
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
     } ],
-    "uid" : "141fa05f02bf329144b0086cf92149a8"
+    "uid" : "testcases.test_all_cases"
   } ]
 }

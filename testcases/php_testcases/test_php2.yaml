@@ -1,4 +1,5 @@
 -
+  feature: phpwind
   story: 登录phpwind接口
   title: 验证登录成功测试用例
   request:
@@ -13,5 +14,5 @@
       backurl: 'http://47.107.116.139/phpwind/'
       invite: ''
 #      csrf_token: ${read_yaml(csrf_token)}   #只有一个参数
-      csrf_token: ${read_yaml2(csrf_token,0)}   #当要读取的值有多个时，可以用多个参数，加一个下标索引
+      csrf_token: ${read_yaml_of_index(csrf_token,0)}   #当要读取的值有多个时，可以用多个参数，加一个下标索引
   validate: null    #断言

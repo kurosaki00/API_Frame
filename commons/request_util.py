@@ -13,6 +13,7 @@ import requests
 import yaml
 
 from commons.assert_util import assert_result
+from commons.global_args import load_ini
 from commons.yaml_util import write_yaml
 from hotloads.debug_util import DebugTalk
 
@@ -24,7 +25,7 @@ class RequestUtil:
     sess = requests.session()
 
     # 标准化yaml测试用例
-    def standard_yaml(self, caseinfo, base_url):
+    def standard_yaml(self,caseinfo):#(self, caseinfo, base_url):
         # 打印日志
         # logger.info("aaaa")
 
@@ -37,14 +38,17 @@ class RequestUtil:
         case_keys = caseinfo.keys()
         # print(case_keys)
         # 如果后者{}的超集set（）返回True
-        if set(case_keys).issuperset({'story', 'title', 'request', 'validate'}):
+        if set(case_keys).issuperset({'feature','story', 'title', 'request', 'validate'}):
             request_keys = caseinfo['request'].keys()
             # print(request_keys)
             # 判断request中必须有method，url
             if set(request_keys).issuperset({'method', 'url'}):
                 # print('用例格式正确')
                 # 处理url
-                caseinfo['request']['url'] = base_url + caseinfo['request']['url']
+                # # 判断yaml中的url是否以http开头,不是的话传入base_url
+                # if "http" not in caseinfo["request"]["url"]:
+                #     caseinfo['request']['url'] = base_url + caseinfo['request']['url']
+                # print(caseinfo['request']['url'])
 
                 # 加入日志
                 logger.info("----------测试用例请求开始----------")
@@ -54,6 +58,17 @@ class RequestUtil:
                 # 判断请求头
                 if set(request_keys).issuperset({"headers"}):
                     logger.info("请求头：%s" % caseinfo["request"]["headers"])
+
+                # 加入公共参数
+                if set(request_keys).issuperset({"params"}):
+                    params = caseinfo["request"]["params"]
+                    # update默认返回是none
+                    params.update(load_ini())
+                    caseinfo["request"]["params"] = params
+                else:
+                    params = {}
+                    params.update(load_ini())
+                    caseinfo["request"]["params"] = params
 
                 # 通过对files进行处理，可以是所有文件
                 for key, value in caseinfo['request'].items():
@@ -76,6 +91,7 @@ class RequestUtil:
                 # 发送请求,对caseinfo要解包
                 res = self.send_all_request(**caseinfo['request'])
                 # print(res.json())
+                # print(res.text)
                 logger.info("预期结果：%s" % caseinfo["validate"])
                 logger.info("实际结果：%s" % res.text)
 
@@ -94,7 +110,7 @@ class RequestUtil:
                 print('yaml中的request目录中必须包含method，url')
                 logger.info("----------测试用例请求结束----------\n")
         else:
-            print('yaml一级目录必须包含story，title，request，validate')
+            print('yaml一级目录必须包含feature,story，title，request，validate')
             logger.info("----------测试用例请求结束----------\n")
 
     # 封装的统一发送请求的方法

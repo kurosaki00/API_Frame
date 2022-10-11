@@ -1,0 +1,2 @@
+# 用来解决不同接口不同url的问题，在yaml_util中读取
+base_url: http://101.34.221.219:8010/api.php
